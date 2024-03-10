@@ -1,0 +1,67 @@
+# Website settings
+title: Shubham Kumar
+description: The website of Shubham Kumar, a data engineer who's passionate about data visualization.
+keywords: Mahdi, Karabiben, github, data, visualization, consultant, big-data, engineer
+baseurl:  / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
+url: https://mahdiqb.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
+img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
+
+
+author: 
+  name: Shubham Kumar 
+  first_name: Shubham 
+  last_name: Kumar 
+  avatar: /static/assets/img/landing/avatar.png  
+  github_username: mahdiqb 
+  linkedin_id:  mahdikarabiben 
+  facebook_username: mahdi.qarabiben  
+  twitter_username: MahdiKarabiben
+  email: mahdikarabibene@gmail.com 
+  cv: https://mahdiqb.github.io/cv.pdf  
+  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
+  skill_icon1:
+   - name: icon-database
+   - name: icon-d3
+  skill_icon2:
+   - name: icon-python
+   - name: icon-database
+  desc: Hi there 👋 I'm a data engineer based in Paris with more than six years of experience designing and building petabyte-scale data platforms. I'm very passionate about open-source projects and enjoy working with data and designing scalable solutions.
+
+# comment
+# disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
+# name: jalpc
+
+# analytics
+## google analytics
+ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+  id: UA-127104124-1
+
+## google optimize
+# go:
+  # id:
+
+## growingIO
+# gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
+  # id:
+
+## donation
+donation: off  # type 'on'/'off' to choice display donation button at post page or not
+
+## carousels
+index_carousel: on  # index page carousel switch
+blog_carousel: on  # blog page carousel switch
+
+# scss
+sass:
+  style: compressed
+
+# Build settings
+encoding: utf-8
+
+# other settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
