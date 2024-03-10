@@ -1,31 +1,31 @@
 # Website settings
 title: Shubham Kumar
-description: The website of Shubham Kumar, a data engineer who's passionate about data visualization.
-keywords: Mahdi, Karabiben, github, data, visualization, consultant, big-data, engineer
+description: The website of Shubham Kumar, a data science analytics enthusiasit who's passionate about cutting edge solution.
+keywords: Shubham, Kumar, github, data, science, consultant, data, engineer, machine, learning
 baseurl:  / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
-url: https://mahdiqb.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
+url: https://shubham-kumar-47.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
 img_path: /Jalpc/static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 
 author: 
   name: Shubham Kumar 
-  first_name: Shubham 
-  last_name: Kumar 
+  first_name: Shubham
+  last_name: Kumar
   avatar: /static/assets/img/landing/avatar.png  
-  github_username: mahdiqb 
-  linkedin_id:  mahdikarabiben 
-  facebook_username: mahdi.qarabiben  
-  twitter_username: MahdiKarabiben
-  email: mahdikarabibene@gmail.com 
-  cv: https://mahdiqb.github.io/cv.pdf  
+  github_username: shubham-kumar-47 
+  linkedin_id: kumar-shubham- 
+  # facebook_username: mahdi.qarabiben  
+  # twitter_username: MahdiKarabiben
+  email: kmrshubham47@outlook.com 
+  cv: https://shubham-kumar-47.github.io/resume.pdf
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
-   - name: icon-database
-   - name: icon-d3
+   - name: fa-solid fa-microchip-ai
+   - name: fa-solid fa-head-side-gear
   skill_icon2:
-   - name: icon-python
-   - name: icon-database
-  desc: Hi there 👋 I'm a data engineer based in Paris with more than six years of experience designing and building petabyte-scale data platforms. I'm very passionate about open-source projects and enjoy working with data and designing scalable solutions.
+   - name: fa-brands fa-python
+   - name: fa-regular fa-snowflake
+  desc: Hi there 👋 I'm a AI/ML Engineer based in India with more than five years of experience designing and building data science analytics solutions. I'm very passionate about open-source projects and enjoy working with data and designing scalable solutions.
 
 # comment
 # disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
@@ -33,8 +33,8 @@ author:
 
 # analytics
 ## google analytics
-ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
-  id: UA-127104124-1
+# ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
+  # id: UA-127104124-1
 
 ## google optimize
 # go:
