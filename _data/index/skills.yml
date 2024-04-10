@@ -1,0 +1,6 @@
+# skills section data
+
+label: Ability
+id : cs
+aspects: AI/ML, Python, SQL, Snowflake, DBT, Databricks, Cloud (Azure & GCP), Docker/Kubernetes, GenAI, ETL/ELT Process, Data Modelling & Orchestration, CI/CD, Agile
+percentage: 80, 90,     90,  80,        80,  70,         70,                 70,                60,    65,              60,                             70,    70

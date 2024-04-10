@@ -1,0 +1,65 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Snowflake Data Migration - Zendesk
+  i18n: Zendesk
+  gh_user: jarrekk
+  repo: 
+  img: /static/assets/img/landing/jekyll.png
+  desc: Led a robust data migration initiative to consolidate Salesforce CRM Accounts Data and Security Data into a centralized Snowflake data warehouse, leveraging DBT for data transformation and Astronomer for workflow orchestration. In an Agile environment, the project involved extracting rich datasets from BigQuery and implementing CI/CD pipelines for consistent deployment.
+
+- name: Causal Inference / Blue Causal - Snowflake Marketplace
+  i18n: Zendesk
+  gh_user: jarrekk
+  repo: 
+  img: /static/assets/img/landing/jekyll.png
+  desc: Leveraged Snowflake's robust data processing strengths to analyze intricate customer interaction datasets, employing sophisticated statistical models to determine causation rather than simple correlations. The project was pivotal in generating strategic insights that directed informed decision-making, thereby equipping customers with the understanding required to enhance their marketplace engagement.
+
+- name: Customer Validation - F5
+  i18n: Zendesk
+  gh_user: jarrekk
+  repo: 
+  img: /static/assets/img/landing/jekyll.png
+  desc: Optimized scoring models to detect Account Origination and Account Takeover fraud based on real users' device telemetry fingerprints captured by a proprietary software.
+
+- name: Personal Loan Cross Sell - Bajaj Finserv
+  i18n: Zendesk
+  gh_user: jarrekk
+  repo: 
+  img: /static/assets/img/landing/jekyll.png
+  desc: A customized scorecard for the cross selling of personal loans to the customers who has already taken Consumer Durable loans from the organization targeting various segments and determining their creditworthiness for underwriting new loans.
+
+- name: Consumer Care - AB InBev
+  i18n: Zendesk
+  gh_user: jarrekk
+  repo: 
+  img: /static/assets/img/landing/jekyll.png
+  desc: An end to end cognitive system for collecting and analysing consumers' response and likelihood for the brand and discovering the value insights for all products.
+
+- name: Delivery Route Optimization - AB InBev
+  i18n: Zendesk
+  gh_user: jarrekk
+  repo: 
+  img: /static/assets/img/landing/jekyll.png
+  desc: Assisted in development of Delivery Linking Tool based on Vehicle Routing Problem for finding the optimal routes for the quick and organised delivery of goods for the organization's EMEA region
+
+- name: Drugs Quantification & Product Authentication- Oak Analytics
+  i18n: Zendesk
+  gh_user: jarrekk
+  repo: 
+  img: /static/assets/img/landing/jekyll.png
+  desc: An RPI-based spectrometer was designed and developed based on the discovery made by Indian Nobel laureate Dr. C.V. Raman, combining spectral analysis with AI/ML, Signal Processing, and Image Processing techniques. This helped to move expensive analytical devices into the field for instant molecular authentication. This rapid, non-invasive, high-tech, low-cost method has enabled the federal government identify and analyse drugs and medicines while lowering the danger associated with pharmaceuticals. The Raman-I Spectrometer gadget serves as the foundation for the scientific equipment, however it has been upgraded to mitigate mechanical issues.
+
+- name: Lead Identification - NeoGrowth Credit
+  i18n: Zendesk
+  gh_user: jarrekk
+  repo: 
+  img: /static/assets/img/landing/jekyll.png
+  desc: By building machine learning model, helped an NBFC Fintech client to increase the number of disbursal from online channel. This also resulted into significant decrease in the total customer acquisition cost, cost of disbursement, cost of client appointment and cost of overall lead servicing.
+
+- name: PMUY- Indian Oil Corporation
+  i18n: Zendesk
+  gh_user: jarrekk
+  repo: 
+  img: /static/assets/img/landing/jekyll.png
+  desc: Pradhan Mantri Ujjwala Yojana is a government plan launched by PM in 2016 to distribute 50 million LPG connections to women of BPL families in India. The aim of this plan is to safeguard the health of women and children by providing them with a clean cooking fuel- LPG and empowering and protect their health by reducing the serious health hazards associated with the cooking based on fossil fuels.
