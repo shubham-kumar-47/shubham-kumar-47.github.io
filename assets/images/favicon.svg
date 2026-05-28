@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="50%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9"/>
+      <stop offset="100%" style="stop-color:#10b981"/>
+    </linearGradient>
+  </defs>
+  <!-- Background with rounded corners -->
+  <rect width="32" height="32" rx="8" fill="url(#bg)"/>
+  <!-- Decorative accent slash -->
+  <path d="M22 4 L18 28" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <!-- SK initials -->
+  <text x="14" y="22" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="800" fill="white" text-anchor="middle" letter-spacing="-0.5">SK</text>
+  <!-- Small dot accent -->
+  <circle cx="26" cy="7" r="2.5" fill="#0ea5e9" opacity="0.8"/>
+</svg>

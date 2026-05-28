@@ -1,28 +1,37 @@
-<div class="container" id="i18_career">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <div class="navy-line"></div>
-            <h1><span data-i18n="career.my_career">My Career</span></h1>
-        </div>
+<section class="career-section" id="career">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Career Journey</h2>
+      <p>Building intelligent systems across industries</p>
     </div>
-    <div class="row features-block">
-        <div class="col-lg-12">
-            <div id="vertical-timeline" class="vertical-container light-timeline center-orientation">
-            {% for career in site.data.index.careers %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
-                <div class="vertical-timeline-block">
-                    <div class="vertical-timeline-icon {% if career.present ==  true %} navy-bg-present {% else %} navy-bg {% endif %} wow rotateIn">
-                        <i class="fa {{ career.icon }}"></i>
-                    </div>
-                    <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
-                        <h2><span data-i18n="career.{{ career.name.i18n }}">{{ career.name.detail }}</span></h2>
-                        <p><span data-i18n="career.{{ career.desc.i18n }}">{{ career.desc.detail }} </span></p>
-                        <span class="vertical-date"><span data-i18n="career.{{ career.date.i18n }}"> {{ career.date.detail }} </span>
-                        <br/> <small><span data-i18n="career.{{ career.job.i18n }}">{{ career.job.detail }}</span></small> </span>
-                    </div>
-                </div>
-            {% endfor %}
+    <div class="timeline">
+      {% for job in site.data.portfolio.career %}
+      <div class="timeline-item reveal">
+        <div class="timeline-dot {% if job.current %}current{% endif %}"></div>
+        <div class="timeline-content">
+          <div class="glass-card">
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+              {% if job.logo != "" %}
+              <img src="{{ job.logo | relative_url }}" alt="{{ job.company }}" style="width: 40px; height: 40px; border-radius: 8px; object-fit: contain; background: #f8f9fb; padding: 4px;">
+              {% endif %}
+              <div>
+                <h3 style="font-size: 1.125rem; margin: 0;">{{ job.role }}</h3>
+                <p style="font-size: 0.875rem; color: #2563eb; margin: 0;">{{ job.company }}</p>
+              </div>
             </div>
+            <p style="font-size: 0.75rem; color: #718096; font-family: 'JetBrains Mono', monospace; margin-bottom: 1rem;">
+              {{ job.period }} &bull; {{ job.location }}
+            </p>
+            {% for highlight in job.highlights %}
+            <div style="margin-bottom: 0.75rem;">
+              <strong style="color: #1e3a5f; font-size: 0.8rem;">{{ highlight.title }}</strong>
+              <p style="font-size: 0.85rem; margin-top: 0.25rem;">{{ highlight.description }}</p>
+            </div>
+            {% endfor %}
+          </div>
         </div>
+      </div>
+      {% endfor %}
     </div>
-</div>
+  </div>
+</section>

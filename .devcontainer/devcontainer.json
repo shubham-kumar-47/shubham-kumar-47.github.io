@@ -1,5 +1,21 @@
 {
-  "name": "Basic Node.js",
+  "name": "Jekyll Portfolio",
+  "containerEnv": {
+    "BUNDLE_PATH": "${containerWorkspaceFolder}/.bundle"
+  },
+  "updateContentCommand": "bundle install",
   "build": { "dockerfile": "Dockerfile" },
-  "remoteUser": "node"
+  "hostname": "jekyll-portfolio",
+  "remoteUser": "shubham",
+  "forwardPorts": [4000],
+  "postCreateCommand": "bundle install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "sissel.shopify-liquid",
+        "redhat.vscode-yaml",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  }
 }

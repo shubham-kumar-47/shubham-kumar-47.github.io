@@ -1,43 +1,61 @@
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center" id="i18_skills">
-            <div class="navy-line"></div>
-            <h1><span data-i18n="skills.my_skills">My Skills</span></h1>
-        </div>
+<section class="skills-section" id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Technical Skills</h2>
+      <p>Core competencies and technical expertise</p>
     </div>
-    <div class="row features-block">
-        <div class="wow zoomIn col-lg-6 col-lg-offset-3">
-            <canvas id="{{ site.data.index.skills.id }}" height="500" width="500"></canvas>
+    <div class="skills-grid">
+      {% for category in site.data.portfolio.skills.categories %}
+      <div class="skill-category reveal reveal-delay-{{ forloop.index }}">
+        <div class="category-header">
+          <div class="category-icon">
+            {% if category.icon == "brain" %}<i class="fas fa-brain"></i>
+            {% elsif category.icon == "code" %}<i class="fas fa-code"></i>
+            {% elsif category.icon == "cloud" %}<i class="fas fa-cloud"></i>
+            {% elsif category.icon == "tools" %}<i class="fas fa-tools"></i>
+            {% endif %}
+          </div>
+          <h3>{{ category.name }}</h3>
         </div>
-        <div class="col-lg-1"></div>
-        <script>
-        var ctx = document.getElementById("{{ site.data.index.skills.id }}");
-        var data = {
-            labels: "{{ site.data.index.skills.aspects }}".split(","),
-            datasets: [{
-                label: "{{ site.data.index.skills.label }}",
-                backgroundColor: "rgba(179,181,198,0.2)",
-                borderColor: "#3385FF",
-                pointBackgroundColor: "#3385FF",
-                pointBorderColor: "#fff",
-                pointHoverBackgroundColor: "#3385FF",
-                pointHoverBorderColor: "#3385FF",
-                data: [{{ site.data.index.skills.percentage }}]
-                }]
-        };
-        var myRadarChart = new Chart(ctx, {
-            type: 'radar',
-            data: data,
-            options: {
-                scale: {
-                    responsive: true,
-                    ticks: {min: 0, max: 100},
-                    lineArc: false,
-                    pointLabels: {fontSize: 14},
-                },
-                legend: {display: false},
-            }
-        });
-        </script>
+        {% for skill in category.items %}
+        <div class="skill-item">
+          <div class="skill-info">
+            <span>{{ skill.name }}</span>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
     </div>
-</div>
+
+    <!-- Certificates -->
+    <div style="margin-top: 4rem;">
+      <h3 class="reveal" style="text-align: center; margin-bottom: 2rem; color: #1e3a5f;">Certifications</h3>
+      {% for category in site.data.portfolio.certificates.categories %}
+      <div class="reveal" style="margin-bottom: 2rem;">
+        <h4 style="font-size: 0.9rem; color: #4a5568; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+          {% if category.icon == "snowflake" %}<i class="fas fa-snowflake" style="color: #29B5E8;"></i>
+          {% elsif category.icon == "google" %}<i class="fab fa-google" style="color: #4285F4;"></i>
+          {% elsif category.icon == "database" %}<i class="fas fa-database" style="color: #1e3a5f;"></i>
+          {% elsif category.icon == "robot" %}<i class="fas fa-robot" style="color: #10b981;"></i>
+          {% elsif category.icon == "cloud" %}<i class="fas fa-cloud" style="color: #4285F4;"></i>
+          {% endif %}
+          {{ category.name }}
+        </h4>
+        <div class="cert-grid">
+          {% for cert in category.certs %}
+          <a href="{{ cert.url }}" target="_blank" rel="noopener" class="cert-badge" style="text-decoration: none;">
+            <span class="cert-icon"><i class="fas fa-award"></i></span>
+            <div>
+              <span style="display: block;">{{ cert.name }}</span>
+              <span style="font-size: 0.7rem; color: #718096;">{{ cert.issuer }}</span>
+            </div>
+            <i class="fas fa-external-link-alt" style="margin-left: auto; font-size: 0.7rem; color: #2563eb;"></i>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

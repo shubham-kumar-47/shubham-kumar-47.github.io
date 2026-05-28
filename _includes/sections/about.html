@@ -1,64 +1,71 @@
-<div class="container" id="i18_about_me">
-    <div class="row m-b-lg">
-        <div class="col-lg-12 text-center">
-            <div class="navy-line"></div>
-            <h1><span data-i18n="about_me.about_me">About Me</span></h1>
-            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p> -->
-        </div>
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>About Me</h2>
+      <p>{{ site.data.portfolio.about.location }}</p>
     </div>
-    <div class="row">
-        <!-- first two icons -->
-        {% for icon in site.author.skill_icon1 %}
-        <div class="col-xs-2 wow fadeInLeft">
-            <div class="team-member">
-                <div class="vote-icon" style="text-align: center">
-                    <i class="fa {{ icon.name }}"></i>
-                </div>
-            </div>
-        </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="lead">{{ site.data.portfolio.about.summary }}</p>
+        <ul class="highlights-list">
+          {% for item in site.data.portfolio.about.highlights %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="about-stats reveal reveal-delay-2">
+        {% comment %}
+          Calculate years of experience dynamically:
+          Spell 1: Jun 2017 (month 6) to May 2018 (month 5) = 12 months
+          Gap: Jun 2018 to Oct 2019 (Masters - excluded)
+          Spell 2: Nov 2019 (month 11) to Present
+          Total months = 12 + months_from_nov_2019_to_now
+          Total years = total_months / 12
+        {% endcomment %}
+        {% assign current_year = 'now' | date: "%Y" | plus: 0 %}
+        {% assign current_month = 'now' | date: "%m" | plus: 0 %}
+
+        {% comment %} Spell 1: Jun 2017 to May 2018 = 12 months {% endcomment %}
+        {% assign spell1_months = 12 %}
+
+        {% comment %} Spell 2: Nov 2019 to current date {% endcomment %}
+        {% assign spell2_start_year = 2019 %}
+        {% assign spell2_start_month = 11 %}
+        {% assign spell2_months = current_year | minus: spell2_start_year | times: 12 %}
+        {% assign spell2_months = spell2_months | plus: current_month | minus: spell2_start_month %}
+
+        {% assign total_months = spell1_months | plus: spell2_months %}
+        {% assign total_exp = total_months | divided_by: 12 %}
+
+        {% comment %} Count total projects dynamically {% endcomment %}
+        {% assign client_count = site.data.portfolio.client_projects | size %}
+        {% assign lab_count = site.data.portfolio.lab_projects | size %}
+        {% assign total_projects = client_count | plus: lab_count %}
+
+        {% comment %} Count total certifications dynamically {% endcomment %}
+        {% assign total_certs = 0 %}
+        {% for cat in site.data.portfolio.certificates.categories %}
+          {% assign cat_size = cat.certs | size %}
+          {% assign total_certs = total_certs | plus: cat_size %}
         {% endfor %}
-        <!-- avatar -->
-        <div class="col-xs-4">
-            <div class="team-member wow zoomIn">
-                <img src="{{ site.author.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
-                <h4><span class="navy">{{ site.author.first_name }}</span> {{ site.author.last_name }}</h4>
-                <ul class="list-inline social-icon">
-                    {% if site.author.github_username %}
-                    <li><a href="https://github.com/{{ site.author.github_username }}" target="blank"><i class="fa fa-github"></i></a></li>
-                    {% endif %}
-                    {% if site.author.linkedin_id %}
-                    <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" target="blank"><i class="fa fa-linkedin"></i></a></li>
-                    {% endif %}
-                    {% if site.author.facebook_username %}
-                    <li><a href="https://www.facebook.com/{{ site.author.facebook_username }}" target="blank"><i class="fa fa-facebook"></i></a></li>
-                    {% endif %}
-                    {% if site.author.twitter_username %}
-                    <li><a href="https://twitter.com/{{ site.author.twitter_username }}" target="blank"><i class="fa fa-twitter"></i></a></li>
-                    {% endif %}
-                    {% if site.author.email %}
-                    <li><a href="mailto:{{ site.author.email }}"><i class="fa fa-envelope-o"></i></a></li>
-                    {% endif %}
-                    <li><a href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fa fa-rss"></i></a></li>
-                    {% if site.author.cv %}
-                    <li><a href="{{ site.author.cv }}" target="blank"><i class="fa fa-file-pdf-o"></i></a></li>
-                    {% endif %}
-                </ul>
-            </div>
+
+        <div class="stat-card">
+          <div class="stat-number">{{ total_exp }}+</div>
+          <div class="stat-label">Years Experience</div>
         </div>
-        <!-- second two icons -->
-        {% for icon in site.author.skill_icon2 %}
-        <div class="col-xs-2 wow fadeInRight">
-            <div class="team-member">
-                <div class="vote-icon" style="text-align: center">
-                    <i class="fa {{ icon.name }}"></i>
-                </div>
-            </div>
+        <div class="stat-card">
+          <div class="stat-number">{{ total_projects }}+</div>
+          <div class="stat-label">Projects Delivered</div>
         </div>
-        {% endfor %}
+        <div class="stat-card">
+          <div class="stat-number">{{ total_certs }}</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Domains</div>
+        </div>
+      </div>
     </div>
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg wow zoomIn">
-            <p><span data-i18n="about_me.des">{{ site.author.desc }}</span></p>
-        </div>
-    </div>
-</div>
+  </div>
+</section>

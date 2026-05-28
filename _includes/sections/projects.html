@@ -1,44 +1,32 @@
-<div class="container" id="i18_projects">
-    <div class="row m-b-lg">
-        <div class="col-lg-12 text-center">
-            <div class="navy-line"></div>
-            <h1><span data-i18n="projects.my_projects">My Projects</span></h1>
-        </div>
+<section class="projects-section" id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Client Projects</h2>
+      <p>Industry-specific work delivered for global clients</p>
     </div>
-    <div class="row">
-        {% for project in site.data.index.projects %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
-            {% if forloop.last %}
-                {% if forloop.last == forloop.first %}
-            <div class="col-sm-6 wow col-sm-offset-3 zoomIn">
-                {% else %}
-            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft col-sm-offset-3 {% else %} fadeInRight {% endif %}">
-                {% endif %}
-            {% else %}
-            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
-            {% endif %}
-              <div class="team-member">
-                  <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
-                  <h4>
-                  {% if project.url %}
-                  <a href="{{ project.url }}" target="_blank"><span class="navy">{{ project.name }}</span></a>
-                  {% elsif project.repo %}
-                  <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank"><span class="navy">{{ project.name }}</span></a>
-                  {% else %}
-                  <span class="navy">{{ project.name }}</span>
-                  {% endif %}
-                  </h4>
-                  <p><span data-i18n="projects.{{ project.i18n }}">{{ project.desc }}</span></p>
-                  {% if project.repo %}
-                  <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn">
-                      <a target="_blank" style="width: 65px;" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
-                      <a target="_blank" style="width: 65px;" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
-                      <div style="height: 10px;"></div>
-                  </div>
-                  {% endif %}
-              </div>
-          </div>
+    <div class="project-grid">
+      {% for project in site.data.portfolio.client_projects %}
+      <div class="project-card reveal reveal-delay-{{ forloop.index | modulo: 4 }}">
+        <div class="client-badge">
+          {% if project.logo %}
+          <img src="{{ project.logo | relative_url }}" alt="{{ project.client }}" style="height: 20px; width: auto; object-fit: contain;">
+          {% else %}
+          <i class="fas fa-building"></i>
+          {% endif %}
+          {{ project.client }}
+        </div>
+        <h4>{{ project.name }}</h4>
+        <p style="font-size: 0.75rem; color: #2563eb; font-family: 'JetBrains Mono', monospace; margin-bottom: 0.5rem;">
+          {{ project.company }} &bull; {{ project.period }}
+        </p>
+        <p style="font-size: 0.85rem;">{{ project.description }}</p>
+        <div class="project-tags">
+          {% for tag in project.tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
       {% endfor %}
     </div>
-</div>
-<br>
+  </div>
+</section>

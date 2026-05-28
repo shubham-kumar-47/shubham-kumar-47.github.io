@@ -1,0 +1,322 @@
+# Portfolio Data - Shubham Kumar
+# All content is rendered from this file
+
+about:
+  name: "Shubham Kumar"
+  tagline: "AI/ML Engineer | Generative & Agentic AI | Data Engineering"
+  avatar: "/assets/images/1757929422408.jpg"
+  location: "Pune, India"
+  summary: |
+    Snowflake Certified Data Science / AI/ML / Generative & Agentic AI / Data Engineering Professional
+    with 7+ years in the IT sector. Passionate about innovation and complex problem-solving.
+  highlights:
+    - "Expert in Generative AI and ML techniques (Supervised & Unsupervised)"
+    - "Experience in Data Modelling, ETL/ELT using Snowflake, DBT, and Google BigQuery"
+    - "Proficient in SQL and Python with focus on Consumer Analytics"
+    - "Worked in Banking & Finance, Retail, Fraud & Securities, SaaS domains"
+    - "Full AI/ML solutions lifecycle — development to deployment of advanced data pipelines"
+  social:
+    github: "shubham-kumar-47"
+    linkedin: "kumar-shubham-"
+    email: "kmrshubham47@outlook.com"
+
+career:
+  - company: "Blue.Cloud"
+    role: "AI/ML Engineer"
+    period: "Apr 2023 - Present"
+    location: "Pune, India"
+    logo: "/assets/images/logos/bluecloud_fav.svg"
+    current: true
+    highlights:
+      - title: "Agentic AI & MLOps"
+        description: "Designed SnowMigrate360 and SnowML360 using LangGraph and multi-agent systems for autonomous SQL migration engines (7-step validation) and end-to-end ML lifecycle management natively within Snowflake."
+      - title: "Enterprise Data Migration"
+        description: "Led large-scale BigQuery/multi-platform-to-Snowflake migration for a major Danish-American SaaS provider. Consolidated Customer, Finance, and Security datasets using dbt and Astronomer with CI/CD pipelines."
+      - title: "Advanced Analytics"
+        description: "Causal inference modeling to analyze complex customer interactions, delivering data-driven insights that improved engagement and retention within the Snowflake Marketplace ecosystem."
+
+  - company: "Accenture"
+    role: "Data Scientist Senior Analyst"
+    period: "Nov 2021 - Mar 2023"
+    location: "Pune, India"
+    logo: "/assets/images/logos/accenture.png"
+    current: false
+    highlights:
+      - title: "Cyber-Security & Fraud Detection"
+        description: "Collaborated with an American Technology Company on fraud detection based on telemetry data."
+      - title: "Consumer Durable Loans"
+        description: "Worked with a leading Indian NBFC Fintech for cross-selling of personal loans."
+      - title: "Digital Media Analytics"
+        description: "Analyzed impact of Digital Media for a Multinational Brewing Organization in APAC & EMEA region."
+
+  - company: "NutaNXT Technologies"
+    role: "Data Scientist"
+    period: "Nov 2019 - Nov 2021"
+    location: "Pune, India"
+    logo: "/assets/images/logos/nutanxt.png"
+    current: false
+    highlights:
+      - title: "Anomaly Detection"
+        description: "Developed scientific devices for Anomaly Detection in FMCG/Retail edible products and drug identification for healthcare."
+      - title: "Raman Spectrophotometer"
+        description: "Managed full-cycle development and deployment of business algorithms for Raman Spectrophotometer (v2) instruments."
+      - title: "Lead Scoring"
+        description: "Customer Lead Scoring for Small & Medium Size Enterprises at an NBFC Fintech company."
+
+  - company: "Indian Oil Corporation Ltd."
+    role: "Software Engineer (Intern)"
+    period: "Jun 2017 - May 2018"
+    location: "Patna, India"
+    logo: "/assets/images/logos/iocl.png"
+    current: false
+    highlights:
+      - title: "Pradhan Mantri Ujjwala Yojana"
+        description: "Managed client relations, addressed technical needs and developed automation solutions. Applied Java and SQL expertise to solve complex business requirements."
+
+skills:
+  categories:
+    - name: "AI & Machine Learning"
+      icon: "brain"
+      items:
+        - name: "AI/ML"
+          level: 90
+        - name: "Deep Learning / NLP"
+          level: 80
+        - name: "Generative AI / Agentic AI"
+          level: 90
+        - name: "Snowflake Cortex AI"
+          level: 85
+
+    - name: "Programming & Data"
+      icon: "code"
+      items:
+        - name: "Python"
+          level: 92
+        - name: "SQL"
+          level: 90
+        - name: "Data Modelling & Design"
+          level: 85
+        - name: "ETL/ELT Processes"
+          level: 85
+
+    - name: "Platforms & Cloud"
+      icon: "cloud"
+      items:
+        - name: "Snowflake"
+          level: 92
+        - name: "Databricks"
+          level: 75
+        - name: "Google BigQuery"
+          level: 80
+        - name: "Azure & Google Cloud"
+          level: 78
+
+    - name: "Tools & DevOps"
+      icon: "tools"
+      items:
+        - name: "DBT"
+          level: 88
+        - name: "Astronomer / Airflow"
+          level: 82
+        - name: "Docker / Kubernetes"
+          level: 75
+        - name: "CI/CD"
+          level: 80
+
+# Client Projects - Industry-specific work for named clients
+client_projects:
+  - name: "SnowMigrate360"
+    client: "BlueCloud's Snowflake Accelerators"
+    company: "Blue.Cloud"
+    logo: "/assets/images/logos/snowflake.png"
+    period: "Apr 2026 - Present"
+    tags: ["LangGraph", "Multi-Agent", "Snowflake", "SQL Migration"]
+    description: "An AI-powered SQL Migration Assistant Workbench that converts SQL from 18 database platforms into validated, optimized Snowflake-compatible SQL. Uses a LangGraph state machine orchestrating specialized agents with a 7-step validation system."
+
+  - name: "SnowML360"
+    client: "BlueCloud's Snowflake Accelerators"
+    company: "Blue.Cloud"
+    logo: "/assets/images/logos/snowflake.png"
+    period: "Apr 2026 - Present"
+    tags: ["MLOps", "Snowflake", "Feature Store", "AI Agent"]
+    description: "A comprehensive ML lifecycle management platform for Snowflake environments. Build, deploy, and monitor ML models without leaving the ecosystem. Includes an AI Agent for autonomous ML development."
+
+  - name: "Causal Inference Modelling"
+    client: "BlueCloud's Snowflake Accelerators"
+    company: "Blue.Cloud"
+    logo: "/assets/images/logos/snowflake.png"
+    period: "Apr 2023 - May 2023"
+    tags: ["Causal Inference", "Snowflake", "Analytics"]
+    description: "Leveraged Snowflake to analyze complex customer interaction data using advanced statistical models to identify causal relationships, delivering actionable insights that improved marketplace engagement."
+
+  - name: "Enterprise Data Migration"
+    client: "Zendesk"
+    company: "Blue.Cloud"
+    logo: "/assets/images/logos/zendesk.png"
+    period: "Jun 2023 - Mar 2026"
+    tags: ["Snowflake", "DBT", "Astronomer", "BigQuery", "CI/CD"]
+    description: "Led robust data migration initiatives for Zendesk ZDP to consolidate Customer, Finance and Security Data from multiple instances to a centralized Snowflake Data Warehouse, leveraging DBT and Astronomer for orchestration."
+
+  - name: "Cyber-Security & Fraud Detection"
+    client: "F5"
+    company: "Accenture"
+    logo: "/assets/images/logos/f5.png"
+    period: "Dec 2022 - Mar 2023"
+    tags: ["Fraud Detection", "Telemetry", "Scoring Models"]
+    description: "Optimized scoring models to detect Account Origination and Account Takeover fraud based on real users' device telemetry fingerprints."
+
+  - name: "Personal Loan Cross-sell"
+    client: "Bajaj Finserv"
+    company: "Accenture"
+    logo: "/assets/images/logos/bajajfinserv.jpg"
+    period: "Sep 2022 - Dec 2022"
+    tags: ["Scorecard", "Cross-selling", "NBFC"]
+    description: "A customized scorecard for cross-selling personal loans to existing Consumer Durable loan customers, determining creditworthiness across segments."
+
+  - name: "Consumer Care Platform"
+    client: "AB InBev"
+    company: "Accenture"
+    logo: "/assets/images/logos/abinbev.jpg"
+    period: "Mar 2022 - Aug 2022"
+    tags: ["NLP", "Azure Cognitive", "Real-time"]
+    description: "End-to-end cognitive system for collecting and analyzing consumers' response using Azure Cognitive Services and NLP, automating ticket prioritization in real-time."
+
+  - name: "Delivery Route Optimization"
+    client: "AB InBev"
+    company: "Accenture"
+    logo: "/assets/images/logos/abinbev.jpg"
+    period: "Jan 2022 - Feb 2022"
+    tags: ["VRP", "Optimization", "FMCG"]
+    description: "Delivery Linking Tool based on Vehicle Routing Problem for optimal delivery routes in EMEA region, reducing transportation costs by 20%+."
+
+  - name: "Drugs Quantification System"
+    client: "Oak Analytics"
+    company: "NutaNXT Technologies"
+    logo: "/assets/images/logos/oakanalytics.jpg"
+    period: "Mar 2020 - Nov 2021"
+    tags: ["Spectroscopy", "AI/ML", "Signal Processing", "Healthcare"]
+    description: "RPI-based Raman Spectrometer combining spectral analysis with AI/ML for instant molecular authentication of drugs and medicines for the federal government."
+
+  - name: "Lead Identification Engine"
+    client: "NeoGrowth Credit"
+    company: "NutaNXT Technologies"
+    logo: "/assets/images/logos/neogrowth.jpg"
+    period: "Nov 2019 - Feb 2020"
+    tags: ["Lead Scoring", "ML", "Fintech"]
+    description: "ML model for increasing disbursals from online channel, resulting in significant decrease in customer acquisition and servicing costs."
+
+# Labs & Innovations - Personal/GitHub projects
+lab_projects:
+  - name: "FundFlowAI"
+    subtitle: "Enterprise SaaS + Fintech with AI Agents"
+    period: "2026"
+    tags: ["AI Agents", "LLMs", "FastAPI", "TypeScript", "Fintech"]
+    description: "Enterprise-grade SaaS + Fintech Platform with AI Agents & ML Pipeline — unified CRM, Support, Financial Analytics, ML intelligence, and AI-powered department agents via local LLMs."
+    github: "https://github.com/shubham-kumar-47/FundFlowAI"
+    featured: true
+
+  - name: "NexusAI"
+    subtitle: "AI-Native Customer Intelligence Platform"
+    period: "2026"
+    tags: ["CrewAI", "RAG", "FastAPI", "React", "Multi-Agent"]
+    description: "Intelligent Customer Intelligence Platform — AI-native CRM with LLMs, multi-agent systems (CrewAI), and RAG pipelines. Built with FastAPI, React, and multi-model LLM support."
+    github: "https://github.com/shubham-kumar-47/NexusAI"
+    featured: true
+
+  - name: "ML_Asset"
+    subtitle: "Reusable ML Components Library"
+    period: "2024"
+    tags: ["Python", "ML", "Docker", "Templates"]
+    description: "A collection of reusable machine learning assets, pipelines, and boilerplate code for rapid ML project bootstrapping."
+    github: "https://github.com/shubham-kumar-47/ML_Asset"
+    featured: false
+
+  - name: "Coupon Redemption - Causal Inference"
+    subtitle: "Statistical Causal Analysis"
+    period: "2023"
+    tags: ["Causal Inference", "Statistics", "Python"]
+    description: "Causal inference analysis for coupon redemption patterns using advanced statistical methods to determine true treatment effects."
+    github: "https://github.com/shubham-kumar-47/CouponRedemption_CausalInference"
+    featured: false
+
+certificates:
+  categories:
+    - name: "Generative AI & Machine Learning"
+      icon: "robot"
+      certs:
+        - name: "Gen AI Foundation"
+          issuer: "Snowflake"
+          url: "https://spnbadges.snowflake.com/ad69e2d1-293e-4cb6-b2f1-4013ea4ffafe#acc.JAfWCweU"
+        - name: "Generative AI with Large Language Models"
+          issuer: "DeepLearning.AI / Coursera"
+          url: "https://www.coursera.org/account/accomplishments/verify/0K5D0P36JVI0?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+        - name: "Google Cloud Big Data and Machine Learning Fundamentals"
+          issuer: "Google Cloud / Coursera"
+          url: "https://www.coursera.org/account/accomplishments/certificate/QR5DTAKZT7EP"
+
+    - name: "Data Engineering"
+      icon: "database"
+      certs:
+        - name: "SnowPro Advanced: Data Engineer Certification"
+          issuer: "Snowflake"
+          url: "https://achieve.snowflake.com/3ca7b2d5-0630-42c1-b99c-e1e6b10692d7#acc.4xp5rcwE"
+        - name: "Snowflake Core"
+          issuer: "Snowflake"
+          url: "https://achieve.snowflake.com/d34ba14b-0918-43bb-b6ad-bd9d0b51be64#acc.HFyp3crI"
+        - name: "SnowConvert for Developers"
+          issuer: "Snowflake / Mobilize.Net"
+          url: "https://achieve.snowflake.com/ad5e451a-ccf7-430c-a034-3bc064772dd7"
+        - name: "Astronomer Certification DAG Authoring for Apache Airflow 3"
+          issuer: "Astronomer"
+          url: "https://www.credly.com/badges/6a005d82-22ca-4594-ad01-0ef0d2f6c04e/linked_in_profile"
+        - name: "Astronomer Certification for Apache Airflow 3 Fundamentals"
+          issuer: "Astronomer"
+          url: "https://www.credly.com/badges/cb5e63be-420e-4a3c-b28d-f61cccb30a3d/linked_in_profile"
+
+    - name: "Cloud Architecture"
+      icon: "cloud"
+      certs:
+        - name: "Google Cloud Certification: Cloud Architect"
+          issuer: "Google Cloud"
+          url: "https://www.coursera.org/account/accomplishments/professional-cert/R8CCMJ6GN4HF?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=prof"
+
+education:
+  - degree: "Master in Science (CA), Data Science"
+    institution: "Symbiosis Institute of Computer Studies and Research"
+    period: "2018 - 2020"
+    location: "Pune, India"
+  - degree: "Bachelors in Computer Applications (Honours)"
+    institution: "Admerit Global Business School"
+    period: "2014 - 2017"
+    location: "Patna, India"
+
+contact:
+  email: "kmrshubham47@outlook.com"
+  phone:
+    - "+91-9572017221"
+    - "+91-8252689970"
+  location: "Tingre Nagar, Pune, India"
+  cv_download: "/Shubham_K_CV_2026_May.pdf"
+  links:
+    - name: "GitHub"
+      url: "https://github.com/shubham-kumar-47"
+      icon: "github"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/kumar-shubham-"
+      icon: "linkedin"
+    - name: "Medium"
+      url: "https://medium.com/@kumarshubham_35935"
+      icon: "medium"
+    - name: "Email"
+      url: "mailto:kmrshubham47@outlook.com"
+      icon: "envelope"
+
+blog:
+  medium_username: "kumarshubham_35935"
+  medium_url: "https://medium.com/@kumarshubham_35935"
+  posts:
+    - title: "Software Defect Prediction: Enhancing Accuracy and Performance"
+      url: "https://medium.com/@kumarshubham_35935/software-defect-prediction-enhancing-accuracy-and-performance-b212698228a7"
+      date: "2020"
+      excerpt: "Exploring machine learning approaches to predict software defects, comparing model accuracy and performance metrics for better quality assurance."
+      tags: ["Machine Learning", "Software Engineering", "Defect Prediction"]
